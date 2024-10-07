@@ -1,0 +1,21 @@
+3 7 seq_location:s1 seq_length:3
+cycle_location:100 cycle_length:5
+7 seq_length counter
+7 cycle_length final_counter
+7 seq_location start
+again:4 final_counter zero stop
+4 counter zero do1
+7 seq_location temp1
+7 cycle_location temp2
+7 temp1:0 temp2:0
+2 counter one counter
+2 final_counter one final_counter
+1 seq_location one seq_location
+1 cycle_location one cycle_location
+3 again
+do1:7 seq_length counter
+7 start seq_location
+3 again
+stop:9
+counter:0 final_counter:0 zero:0 start:0 one:1
+s1:4 5 6

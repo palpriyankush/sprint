@@ -1,0 +1,13 @@
+3 7 el1_loc:l1 length:2 target:5 result:0
+3 start one:1 
+counter:0
+start:7 el1_loc a 
+go:4 counter length do
+4 a:0 target do2
+1 a one a
+1 counter one counter
+3 go
+do:9
+do2:1 result one result
+3 do
+l1:5 6

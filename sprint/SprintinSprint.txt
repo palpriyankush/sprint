@@ -3,6 +3,7 @@ start_of_the_program:s1 inst:0
 counter:0 three:3 two:2 nine:9 four:4 zero:0 one:1 five:5 seven:7 dest2:0 dest2_:0 end_point:-1
 start:7 start_of_the_program cursor
 1 end_point start_of_the_program end_point
+
 terminate:7 cursor:0 inst
 4 inst nine do
 4 inst three do_jump
@@ -11,12 +12,19 @@ terminate:7 cursor:0 inst
 4 inst four jmp_equal
 4 inst five jmp_less
 4 inst seven do_copy
+
 do:9
+
+
 do_jump:1 one cursor cursor
 7 cursor dest
 7 dest:0 counter
 1 counter end_point cursor
 3 terminate
+
+
+
+
 do_add:1 cursor one cursor
 7 cursor length
 7 length:0 num1
@@ -35,6 +43,10 @@ do_add:1 cursor one cursor
 1 num1:0 num2:0 sum:0
 1 cursor one cursor
 3 terminate
+
+
+
+
 do_sub:1 cursor one cursor
 7 cursor length_sub
 7 length_sub:0 num1_sub
@@ -53,6 +65,10 @@ do_sub:1 cursor one cursor
 2 num1_sub:0 num2_sub:0 diff:0
 1 cursor one cursor
 3 terminate
+
+
+
+
 jmp_equal:1 cursor one cursor
 7 cursor val1
 7 val1:0 loc1
@@ -73,6 +89,9 @@ jmp_equal:1 cursor one cursor
 3 terminate
 go2:7 dest2 cursor
 3 terminate
+
+
+
 jmp_less:1 cursor one cursor
 7 cursor val1_
 7 val1_:0 loc1_
@@ -93,6 +112,9 @@ jmp_less:1 cursor one cursor
 3 terminate
 go1:7 dest2_ cursor
 3 terminate
+
+
+
 do_copy:1 cursor one cursor
 7 cursor copy1
 7 copy1:0 copy1_

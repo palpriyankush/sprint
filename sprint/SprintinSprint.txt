@@ -1,0 +1,117 @@
+3 start 
+start_of_the_program:s1 inst:0
+counter:0 three:3 two:2 nine:9 four:4 zero:0 one:1 five:5 seven:7 dest2:0 dest2_:0 end_point:-1
+start:7 start_of_the_program cursor
+1 end_point start_of_the_program end_point
+terminate:7 cursor:0 inst
+4 inst nine do
+4 inst three do_jump
+4 inst one do_add
+4 inst two do_sub
+4 inst four jmp_equal
+4 inst five jmp_less
+4 inst seven do_copy
+do:9
+do_jump:1 one cursor cursor
+7 cursor dest
+7 dest:0 counter
+1 counter end_point cursor
+3 terminate
+do_add:1 cursor one cursor
+7 cursor length
+7 length:0 num1
+1 cursor one cursor
+7 cursor length1
+7 length1:0 num2
+1 cursor one cursor
+7 cursor length2
+7 length2:0 sum
+1 start_of_the_program num1 num1
+2 num1 one num1
+1 start_of_the_program num2 num2
+2 num2 one num2
+1 start_of_the_program sum sum
+2 sum one sum
+1 num1:0 num2:0 sum:0
+1 cursor one cursor
+3 terminate
+do_sub:1 cursor one cursor
+7 cursor length_sub
+7 length_sub:0 num1_sub
+1 cursor one cursor
+7 cursor length1_sub
+7 length1_sub:0 num2_sub
+1 cursor one cursor
+7 cursor length2_sub
+7 length2_sub:0 diff
+1 start_of_the_program num1_sub num1_sub
+2 num1_sub one num1_sub
+1 start_of_the_program num2_sub num2_sub
+2 num2_sub one num2_sub
+1 start_of_the_program diff diff
+2 diff one diff
+2 num1_sub:0 num2_sub:0 diff:0
+1 cursor one cursor
+3 terminate
+jmp_equal:1 cursor one cursor
+7 cursor val1
+7 val1:0 loc1
+1 cursor one cursor
+7 cursor val2
+7 val2:0 loc2
+1 cursor one cursor
+7 cursor dest1
+7 dest1:0 dest2
+1 start_of_the_program loc1 loc1
+2 loc1 one loc1
+1 start_of_the_program loc2 loc2
+2 loc2 one loc2
+1 start_of_the_program dest2 dest2
+2 dest2 one dest2
+4 loc1:0 loc2:0 go2
+1 cursor one cursor
+3 terminate
+go2:7 dest2 cursor
+3 terminate
+jmp_less:1 cursor one cursor
+7 cursor val1_
+7 val1_:0 loc1_
+1 cursor one cursor
+7 cursor val2_
+7 val2_:0 loc2_
+1 cursor one cursor
+7 cursor dest1_
+7 dest1_:0 dest2_
+1 start_of_the_program loc1_ loc1_
+2 loc1_ one loc1_
+1 start_of_the_program loc2_ loc2_
+2 loc2_ one loc2_
+1 start_of_the_program dest2_ dest2_
+2 dest2_ one dest2_
+5 loc1_:0 loc2_:0 go1
+1 cursor one cursor
+3 terminate
+go1:7 dest2_ cursor
+3 terminate
+do_copy:1 cursor one cursor
+7 cursor copy1
+7 copy1:0 copy1_
+1 cursor one cursor
+7 cursor copy2
+7 copy2:0 copy2_
+1 start_of_the_program copy1_ copy1_
+2 copy1_ one copy1_
+1 start_of_the_program copy2_ copy2_
+2 copy2_ one copy2_
+7 copy1_:0 copy2_:0
+7 copy2 cursor
+1 cursor one cursor
+3 terminate
+
+
+s1:7 3 4 0 9
+
+
+
+
+
